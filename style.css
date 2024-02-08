@@ -1,0 +1,183 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header
+{
+    width: 100vw;
+    background-color: black;
+    padding: 15px;
+}
+header>h1{
+    color: azure;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+body{
+    background-color: gold;
+}
+.scorebord
+{
+    position: relative;
+    border: 2px solid black;
+    margin: 20px auto;
+    width: 250px;
+    height: 100px;
+    font-size: 30px;
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.badge
+{
+    background-color: purple;
+    color: aliceblue;
+    font-size: 1.5rem;
+    padding: 3px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#user
+{
+    position: absolute;
+    top:35px;
+    left:-38px;
+}
+#comp
+{
+    position: absolute;
+    top:35px;
+    right:-42px;
+}
+.scorebord>span{
+    font-size: 2rem;
+}
+
+.choices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+.choice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:210px;
+    height: 160px;
+    border-radius: 90%;
+    transform: all 0.3s ease;
+}
+.choice>img
+{
+    width:200px;
+    height: 150px;
+    border: 3px solid black;
+    object-fit: cover;
+    border-radius: 90%;
+}
+.choice:hover,.choice:focus,.choice:active
+{
+    cursor: pointer;
+    background-color:black;
+}
+.result
+{
+    
+    margin: 30px auto;
+    padding: 10px auto;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    width: 500px;
+    font-weight: bold;
+    color: aqua;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+#actionmsg
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight:500;
+    color: black;
+}
+
+@media screen  and (max-width: 700px){
+    .choices{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+        
+    }
+    .choice{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:150px;
+        height: 100px;
+        border-radius: 100%;
+        transform: all 0.3s ease;
+    }
+    .choice>img
+    {
+        width:135px;
+    height: 90px;
+    border: 3px solid black;
+    object-fit: cover;
+    border-radius: 80%;
+    }
+    .choice:hover
+    {
+        cursor: pointer;
+        background-color:black;
+    }
+    header>h1
+    {
+        font-size: 1.6rem;
+    }
+    .result
+    {
+        font-size: 20px;
+        text-align: center;
+        width: 350px;
+        height: 30px;
+        padding: 2px;
+    }
+        .choice:hover,.choice:focus,.choice:active
+    {
+        cursor: pointer;
+        background-color:black;
+    }
+    #actionmsg
+    {
+        font-size: 30px;
+    }
+
+}
+.green
+{
+    
+    border:4px solid darkgreen;
+    box-shadow: 0 0 10px darkgreen;
+   
+}
+.red
+{
+    border:4px solid red;
+    box-shadow: 0 0 10px red;  
+}
+.grey
+{
+    border:4px solid grey;
+    box-shadow: 0 0 10px grey;  
+}
