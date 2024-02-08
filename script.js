@@ -89,12 +89,37 @@ function game(userchoice)
 function main()
 {
     rock.addEventListener('click',()=>{
+        document.querySelector('.choice').addEventListener("touchstart",()=>
+        {
+            document.querySelector('.choice').classList.add("choice2")
+        })
+        document.querySelector('.choice').addEventListener("touchend",()=>
+        {
+            document.querySelector('.choice').classList.remove("choice2")
+        })
         game("r")
     })
+
     paper.addEventListener('click',()=>{
+        document.querySelector('.choice').addEventListener("touchstart",()=>
+        {
+            document.querySelector('.choice').classList.add("choice2")
+        })
+        document.querySelector('.choice').addEventListener("touchend",()=>
+        {
+            document.querySelector('.choice').classList.remove("choice2")
+        })
         game("p")
     })
     scissors.addEventListener('click',()=>{
+        document.querySelector('.choice').addEventListener("touchstart",()=>
+        {
+            document.querySelector('.choice').classList.add("choice2")
+        })
+        document.querySelector('.choice').addEventListener("touchend",()=>
+        {
+            document.querySelector('.choice').classList.remove("choice2")
+        })
         game("s")
     })  
 }

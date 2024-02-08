@@ -81,11 +81,21 @@ body{
     object-fit: cover;
     border-radius: 90%;
 }
-.choice:hover,.choice:focus,.choice:active
+@media screen and (min-width: 700px)
 {
-    cursor: pointer;
+        .choice:hover
+    {
+        cursor: pointer;
+        background-color:black;
+    }
+
+};
+.choice2
+{
     background-color:black;
 }
+    
+
 .result
 {
     
@@ -136,7 +146,7 @@ body{
     object-fit: cover;
     border-radius: 80%;
     }
-    .choice:hover
+    .choice:active
     {
         cursor: pointer;
         background-color:black;
@@ -152,11 +162,6 @@ body{
         width: 350px;
         height: 30px;
         padding: 2px;
-    }
-        .choice:hover,.choice:focus,.choice:active
-    {
-        cursor: pointer;
-        background-color:black;
     }
     #actionmsg
     {
